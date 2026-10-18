@@ -24,19 +24,21 @@
 
 <h2>ข้อมูลที่แอปเก็บ</h2>
 <ul>
-  <li><b>ตำแหน่ง (GPS)</b> – ใช้ขณะเปิดแอปเพื่อบันทึกเส้นทางการขับ แสดงแผนที่ และให้คุณแชร์ตำแหน่งเมื่อขอความช่วยเหลือฉุกเฉิน แอปไม่ใช้ตำแหน่งเบื้องหลัง</li>
+  <li><b>ชื่อและเบอร์โทรเจ้าของรถ</b> – ที่คุณกรอกในหน้าลงทะเบียน (บน iOS ข้ามได้) เก็บคู่กับข้อมูลรถ เพื่อให้อู่ Mini Classic Friend Garage ติดต่อคุณเรื่องรถได้</li>
+  <li><b>ตำแหน่ง (GPS)</b> – ใช้บันทึกเส้นทางการขับ แสดงแผนที่ ส่งความเร็วไปแสดงบนจอในรถ และให้คุณแชร์ตำแหน่งเมื่อขอความช่วยเหลือฉุกเฉิน บน iOS แอปอาจใช้ตำแหน่งต่อเนื่องขณะปิดหน้าจอระหว่างขับ เพื่อส่งความเร็วไปที่จอในรถเท่านั้น</li>
   <li><b>ข้อมูลรถและเครื่องยนต์</b> – ค่าจากกล่องเกจ (เช่น รอบเครื่อง อุณหภูมิ แรงดัน) หมายเลขซีเรียลของกล่อง ECU บันทึกการเดินทาง และบันทึกการซ่อมบำรุง/น้ำมันที่คุณกรอก</li>
+  <li><b>ฟีดแชร์ทริป (iOS)</b> – ถ้าคุณเลือกแชร์ทริป ชื่อที่แสดง ทะเบียนรถ เส้นทาง ระยะทาง รูปที่แนบ ความคิดเห็น และการกดถูกใจ จะแสดงให้ผู้ใช้แอปคนอื่นเห็น ระบุตัวด้วยรหัสเครื่องแบบสุ่ม ลบโพสต์ของคุณเองได้ทุกเมื่อ และรายงานหรือบล็อกเนื้อหาที่ไม่เหมาะสมได้ในแอป</li>
   <li><b>รายชื่อติดต่อฉุกเฉิน</b> – ชื่อและเบอร์โทรที่คุณพิมพ์เองในแอป เก็บไว้ในเครื่องเท่านั้น ไม่ส่งขึ้นเซิร์ฟเวอร์ แอปไม่อ่านสมุดรายชื่อในโทรศัพท์</li>
 </ul>
 
 <h2>การซิงก์ข้อมูลขึ้นเซิร์ฟเวอร์</h2>
-<p>เพื่อให้ข้อมูลรถอยู่ครบเมื่อเปลี่ยนเครื่องหรือใช้หลายเครื่อง แอปซิงก์ข้อมูลรถ บันทึกซ่อมบำรุง ทริป ไฟล์เส้นทาง GPS และไฟล์บันทึกค่าจากเกจ ไปยังเซิร์ฟเวอร์ของผู้พัฒนา โดยใช้หมายเลขซีเรียลของกล่อง ECU เป็นตัวระบุ ไม่ผูกกับชื่อ อีเมล หรือเบอร์โทรของคุณ ปัจจุบันการเชื่อมต่อกับเซิร์ฟเวอร์ซิงก์ใช้ HTTP ซึ่งยังไม่เข้ารหัสระหว่างทาง</p>
+<p>เพื่อให้ข้อมูลรถอยู่ครบเมื่อเปลี่ยนเครื่องหรือใช้หลายเครื่อง แอปซิงก์ข้อมูลรถ บันทึกซ่อมบำรุง ทริป ไฟล์เส้นทาง GPS และไฟล์บันทึกค่าจากเกจ ไปยังเซิร์ฟเวอร์ของผู้พัฒนา โดยใช้หมายเลขซีเรียลของกล่อง ECU เป็นตัวระบุ พร้อมชื่อและเบอร์โทรเจ้าของรถ (ถ้ากรอกไว้) ปัจจุบันการเชื่อมต่อกับเซิร์ฟเวอร์ซิงก์ใช้ HTTP ซึ่งยังไม่เข้ารหัสระหว่างทาง</p>
 <p>แอปยังดาวน์โหลดไฟล์กฎการวิเคราะห์เครื่องยนต์จากเซิร์ฟเวอร์เดียวกัน และใช้ Google Maps SDK แสดงแผนที่ (Google อาจประมวลผลข้อมูลตาม <a href="https://policies.google.com/privacy">นโยบายของ Google</a>)</p>
 
 <h2>สิ่งที่เราไม่ทำ</h2>
 <ul>
   <li>ไม่ขายหรือแบ่งปันข้อมูลให้บุคคลที่สามเพื่อการโฆษณา</li>
-  <li>ไม่มีโฆษณา ไม่มีระบบติดตามผู้ใช้ ไม่มีบัญชีผู้ใช้</li>
+  <li>ไม่มีโฆษณา ไม่มีระบบติดตามผู้ใช้ข้ามแอป ไม่มีบัญชีผู้ใช้หรือรหัสผ่าน</li>
   <li>ใช้ข้อมูลเฉพาะเพื่อให้ฟีเจอร์ของแอปทำงานเท่านั้น</li>
 </ul>
 
@@ -59,19 +61,21 @@
 
 <h2>Data the app collects</h2>
 <ul>
-  <li><b>Location (GPS)</b> – used while the app is open to record your driving route, show the map, and let you share your position when you ask for emergency help. The app does not use background location.</li>
+  <li><b>Car owner name and phone number</b> – entered on the registration screen (optional on iOS), kept with your car records so the Mini Classic Friend Garage can contact you about your car.</li>
+  <li><b>Location (GPS)</b> – used to record your driving route, show the map, send speed to the in-car display, and let you share your position when you ask for emergency help. On iOS the app may keep using location while the screen is off during a drive, only to keep sending speed to the in-car display.</li>
   <li><b>Car and engine data</b> – readings from the gauge box (e.g. RPM, temperatures, pressures), the ECU box serial number, trip records, and service/fuel entries you type in.</li>
+  <li><b>Trip feed (iOS)</b> – if you choose to share a trip, your display name, plate, route, distance, attached photos, comments and likes are visible to other app users. You are identified by a random device ID. You can delete your own posts at any time and report or block objectionable content in the app.</li>
   <li><b>Emergency contacts</b> – names and phone numbers you type into the app. They stay on your device only and are never uploaded. The app does not read your phone's contact list.</li>
 </ul>
 
 <h2>Cloud sync</h2>
-<p>So your car data survives a phone change or works on several phones, the app syncs car details, service logs, trips, GPS route files and gauge log files to the developer's server, identified by the ECU box serial number, not by your name, email or phone number. The sync connection currently uses HTTP and is not encrypted in transit.</p>
+<p>So your car data survives a phone change or works on several phones, the app syncs car details, service logs, trips, GPS route files and gauge log files to the developer's server, identified by the ECU box serial number, together with the car owner name and phone number if you entered them. The sync connection currently uses HTTP and is not encrypted in transit.</p>
 <p>The app also downloads engine-analysis rule files from the same server and uses the Google Maps SDK to show maps (Google may process data under the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>).</p>
 
 <h2>What we do not do</h2>
 <ul>
   <li>We do not sell data or share it with third parties for advertising.</li>
-  <li>No ads, no user tracking, no user accounts.</li>
+  <li>No ads, no cross-app tracking, no user accounts or passwords.</li>
   <li>Data is used only to make the app's features work.</li>
 </ul>
 
